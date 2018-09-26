@@ -1,0 +1,12 @@
+#RabbitMQ相关配置
+spring:
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    host: localhost
+#忽略权限拦截
+management:
+  security:
+    enabled: false

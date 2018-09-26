@@ -1,0 +1,18 @@
+server:
+  port: 2222
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          search-paths: repository
+          username: weishihuai
+          password: wsh775334252
+          uri: https://github.com/weishihuai/SpringCloudConfig/
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
